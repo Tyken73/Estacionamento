@@ -1,2 +1,56 @@
-/**/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, Arial, Helvetica;
+}
 
+main{
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    gap: 2rem;
+    height: 100vh;
+    padding: 10vw;
+}
+
+div{
+    border: solid 2px black;
+    border-radius: 0.5rem;
+    padding: 2rem;
+}
+
+h1{ text-align: center; }
+
+input, select{
+    border: solid 1px;
+    padding: 0.25rem;
+    border-radius: 0.25rem;
+    max-width: 40%;
+    float: right;
+}
+
+input[type="number"]{
+    max-width: 20%;
+}
+
+button{
+    background-color: rgb(225, 225, 225);
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: 200ms all;
+}
+
+button:hover, button:focus{ background-color: rgb(200, 200, 200); }
+
+#button-submit{
+    background-color: royalblue;
+    color: whitesmoke;
+    margin-bottom: 1vh;
+}
+
+#button-submit:hover, #button-submit:focus{ background-color: rgba(45, 85, 200, 1); }

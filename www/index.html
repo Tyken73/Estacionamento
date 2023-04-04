@@ -4,14 +4,37 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: content: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
-    <script src="components/loader.js"></script>
     <link rel="stylesheet" href="components/loader.css">
+    <script src="components/loader.js"></script>
     <link rel="stylesheet" href="css/style.css">
-    <script>
-    </script>
+    <script src="components/script.js"></script>
 </head>
 <body>
-	<br />
-    This is a template for Monaca app.
+	 <main>
+        <h1>Estacionamento</h1>
+        
+        <div>
+            <label for="placa">Placa</label>
+            <input type="text" name="placa" id="placa" placeholder="Digite a placa">
+            <br><br>
+            <label for="categoria">Categoria</label>
+            <select name="categoria" id="categoria">
+                <option value="subcompacto">Subcompacto</option>
+                <option value="compacto">Compacto</option>
+                <option value="hatch">Hatch</option>
+                <option value="sedan">Sedan</option>
+                <option value="suv">SUV</option>
+                <option value="pickup">Pick-up</option>
+            </select>
+            <br><br>
+            <label for="horas">Horas</label>
+            <input type="number" name="horas" id="horas" min="1" max="3">
+            <br><br><br>
+            <button type="submit" id="button-submit" onclick="ComprarHoras()">Entrar</button>
+            <button type="reset" id="button-reset" onclick="NovaCompra()">Nova compra</button>
+        </div>
+
+        <h2 id="total"></h2>
+    </main>
 </body>
 </html>
