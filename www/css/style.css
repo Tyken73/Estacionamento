@@ -5,34 +5,36 @@
     font-family: sans-serif, Arial, Helvetica;
 }
 
-main{
+form{
     display: grid;
     justify-items: center;
     align-content: center;
     gap: 2rem;
     height: 100vh;
-    padding: 10vw;
 }
 
 div{
-    border: solid 2px black;
+    background-color: white;
+    border: solid 3px royalblue;
     border-radius: 0.5rem;
     padding: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.8) 0px 6px 32px -16px;
 }
 
-h1{ text-align: center; }
-
 input, select{
-    border: solid 1px;
+    background-color: white;
+    border: solid 2px;
     padding: 0.25rem;
     border-radius: 0.25rem;
-    max-width: 40%;
+    max-width: 50%;
     float: right;
 }
 
-input[type="number"]{
-    max-width: 20%;
-}
+input[type="number"]{ max-width: 15%; }
+
+input:hover, select:hover{ border-color: royalblue; }
+label:hover{ color: royalblue; }
+input:focus, select:focus{ outline-color: royalblue; }
 
 button{
     background-color: rgb(225, 225, 225);
@@ -45,7 +47,12 @@ button{
     transition: 200ms all;
 }
 
-button:hover, button:focus{ background-color: rgb(200, 200, 200); }
+button:hover{ background-color: rgb(200, 200, 200); }
+button:focus{
+    outline-style: solid;
+    outline-width: 1px;
+    outline-color: black;
+}
 
 #button-submit{
     background-color: royalblue;
@@ -53,4 +60,13 @@ button:hover, button:focus{ background-color: rgb(200, 200, 200); }
     margin-bottom: 1vh;
 }
 
-#button-submit:hover, #button-submit:focus{ background-color: rgba(45, 85, 200, 1); }
+#button-submit:hover{ background-color: rgba(45, 85, 200, 1); }
+
+hr{
+    border-style: solid; 
+    border-top-width: 1px;
+    border-bottom: none;
+    border-color: black;
+}
+
+h2{ text-align: center; }

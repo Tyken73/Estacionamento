@@ -12,9 +12,7 @@ function ComprarHoras(){
     else if (veiculo == 'suv') { taxa = 6.00; }
     else if (veiculo == 'pickup') { taxa = 7.00; }
 
-    total.innerHTML = 'Total: R$' + taxa * horas;
+    if (horas <=3 && horas >= 1)  { total.innerHTML = 'Total: R$' + taxa * horas; } 
 }
 
-function NovaCompra(){
-    alert('O formulário será resetado');
-}
+function NovaCompra(){ alert('O formulário será resetado'); }

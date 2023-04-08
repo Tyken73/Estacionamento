@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" id="com.estacionamento" version="1.0.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" id="com.estacionamento" version="1.0.2">
   <name>Estacionamento</name>
   <description>Made with Monaca (http://monaca.mobi)</description>
   <author/>
@@ -99,7 +99,7 @@
   <preference name="KeepRunning" value="true"/>
   <preference name="monaca:AndroidIsPackageNameSeparate" value="false"/>
   <preference name="DisallowOverscroll" value="true"/>
-  <preference name="Orientation" value="default"/>
+  <preference name="Orientation" value="portrait"/>
   <preference name="SplashScreenDelay" value="2000"/>
   <preference name="Fullscreen" value="false"/>
 </widget>
